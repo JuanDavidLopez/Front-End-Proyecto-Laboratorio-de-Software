@@ -10,8 +10,18 @@ html{
     width: 500px      ;
     background-color: rgb(102, 189, 218);
     box-shadow: 4px 4px rgb(109, 146, 158);
+}
 
+a:link{
+  
+}
 
+a:hover{
+ 
+}
+
+a:active{
+    
 }
 
 input[type="submit"]{

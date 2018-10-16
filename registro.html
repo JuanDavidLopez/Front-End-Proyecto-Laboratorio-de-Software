@@ -9,6 +9,8 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+    
 </head>
 <body>
 <!-- +++++++++++++++++++++++++++++++++++   INICIO DE CONTENIDO +++++++++++++++++++++++++++++++++++++-->
@@ -17,15 +19,47 @@
             <form action="" method="POST">
                 <fieldset>
                     <legend>Registro de Usuario</legend>
-                        <div class="col-xs-4  col-sm-6 ">
-                    
+                        <div class="col-12">
+                          <p class="text-sm-center"><span>Por favor llenar todos los campos</span></p>
                         </div>
+
+                    <div class="form-group">
+                            <label for="NombreUsuario">Nombre de usuario</label>
+                            <input class="form-control" id="NombreUsuario" placeholder="Ingrese el nombre de usuario" type="text">
+                    </div>  
+
+                    <div class="form-group row">
+                            <label for="staticEmail" class="col-4 col-sm-4 col-form-label">Correo electronico</label>
+                            <div class="col-8  col-sm-8">
+                                <input readonly="" class="form-control-plaintext" id="staticEmail" value="email@example.com" type="text">
+                                <small id="emailHelp" class="form-text text-muted">Ejemplo de una direccion de correo electronico.</small>
+                            </div>
+                    </div>
+
+                    <div class="form-group">
+                            <label for="InputEmail">Direccion de correo electronico</label>
+                            <input class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Ingrese email" type="email">
+                    </div> 
+
+                    <div class="form-group">
+                            <label for="Password">Contraseña</label>
+                            <input class="form-control" id="Password" placeholder="Ingrese contraseña" type="password">
+                    </div>
+
+                    <div class="form-group">
+                            <label for="Password">Confirmar contraseña</label>
+                            <input class="form-control" id="Password" placeholder="Confirme contraseña" type="password">
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-sm-auto">
+                            <input type="button" class="btn btn-outline-success mt-3 pt-2 pb-2 pl-4 pr-4 " value="Registrar">
+                        </div>
+                    </div>
                 </fieldset> 
             </form>
-    
-    
         </div>
-    </div>    
+    
+    </div>   
 
 
 
