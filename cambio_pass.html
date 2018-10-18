@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registro de Usuario</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+</head>
+<body>
+<!-- +++++++++++++++++++++++++++++++++++   INICIO DE CONTENIDO +++++++++++++++++++++++++++++++++++++-->    
+    <div class="container mt-4 justify-content-around">
+        <div class="row">
+                <p><strong>Por favor rellene todos los campos</strong></p><br>
+        </div>
+        <div class="row">
+            <form class="w-75" action="" method="GET">
+                    <div class="col-4">
+                        <br><br><label class="float-left" for="InputNowPass">Ingresar contraseña actual</label>
+                    </div>
+                    <div class="col-6 float-right">
+                        <div class="form-group pl-5 pr-5">
+                            <input class="form-control" id="InputNowPass" type="password">
+                        </div>
+                    </div>
+            </form>
+
+        </div>
+
+        <div class="row">
+                <form class="w-75" action="" method="POST">
+                        <div class="col-4">
+                            <br><label class="float-left" for="InputNewPass">Ingresar nueva contraseña</label>
+                        </div>
+                        <div class="col-6 float-right">
+                            <div class="form-group pl-5 pr-5">
+                                <input class="form-control" id="InputNewPass" type="password">
+                            </div>
+                        </div>
+                </form>
+        </div>
+
+        <div class="row">
+                <form class="w-75" action="" method="POST">
+                        <div class="col-4">
+                            <br><label class="float-left" for="ConfirmNewPass">Confirme la nueva contraseña</label>
+                        </div>
+                        <div class="col-6 float-right">
+                            <div class="form-group pl-5 pr-5">
+                                <input class="form-control" id="ConfirmNewPass" type="password">
+                            </div>
+                        </div>
+                </form>
+        </div>
+
+        <div class="row">
+                <div class="col-6 justify-content-center">
+                        <br><input type="button" class="btn btn-outline-danger mt-5 mb-5 pt-2 pb-2 pl-4 pr-4 " value="Cancelar">
+                </div>
+
+                <div class="col-6 justify-content-center">
+                        <br><input type="button" class="btn btn-outline-success mt-5 mb-5 pt-2 pb-2 pl-4 pr-4 " value="Confirmar">
+                </div>
+        </div>
+
+        
+    </div>
+    
+</body>
+</html>
