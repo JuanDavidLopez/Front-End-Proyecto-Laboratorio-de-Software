@@ -4,7 +4,8 @@ $("#btnModal").on("click",function(){
 
 $('.jd-date').datepicker({
     format: "dd/mm/yyyy",
-    languaje: "es",
+    languaje: "es",    
+    startDate: "-200y",
     orientation: "auto",
     autoclose: true
 });
