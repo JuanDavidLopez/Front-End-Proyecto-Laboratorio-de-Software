@@ -7,6 +7,6 @@ $('.jd-date').datepicker({
     languaje: "es",    
     startDate: "-200y",
     endDate: "+0d",
-    orientation: "auto",
+    orientation: "bottom auto",
     autoclose: true
 });

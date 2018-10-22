@@ -9,7 +9,9 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-
+    
+    <!------ BDP -------->
+    <link rel="stylesheet" href="libs/boostrap-datepicker/css/bootstrap-datepicker.css">
 </head>
 <body>
 <!-- +++++++++++++++++++++++++++++++++++   INICIO DE CONTENIDO +++++++++++++++++++++++++++++++++++++-->
@@ -39,15 +41,45 @@
                             <label for="InputEmail">Direccion de correo electronico</label>
                             <input class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Ingrese email" type="email">
                     </div> 
+  <!-------------------------------------------------------------   INICIO INGRESO DE FECHA ------------------------------------------------------------------------------------------------>
 
                     <div class="form-group">
+                        <button type="button" id="btnModal" class="btn btn-primary">Ingresar fecha de nacimiento</button>
+                    </div>    
+                    
+                    <div class="modal" id="modal-date" tabindex="-1" role="dialog">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title">Seleccione su fecha de nacimiento</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="input-group date jd-date">
+                                        <input type="text" class="form-control"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                  <button type="button" class="btn btn-primary">Seleccionar</button>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                    
+
+  <!-------------------------------------------------------------   FIN INGRESO DE FECHA ------------------------------------------------------------------------------------------------>
+
+                      <div class="form-group">
                             <label for="Password">Contraseña</label>
                             <input class="form-control" id="Password" placeholder="Ingrese contraseña" type="password">
                     </div>
 
                     <div class="form-group">
-                            <label for="Password">Confirmar contraseña</label>
-                            <input class="form-control" id="Password" placeholder="Confirme contraseña" type="password">
+                            <label for="CPassword">Confirmar contraseña</label>
+                            <input class="form-control" id="CPassword" placeholder="Confirme contraseña" type="password">
                     </div>
                     <div class="row justify-content-center">
                             <input type="button" class="btn btn-outline-success mt-5 mb-5 pt-2 pb-2 pl-4 pr-4 " value="Registrar">
@@ -60,37 +92,14 @@
     </div>   
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!-- +++++++++++++++++++++++++++++++++++   FIN DE CONTENIDO +++++++++++++++++++++++++++++++++++++-->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery-3.3.1.slim.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js" ></script>
+    <script src="libs/boostrap-datepicker/js/bootstrap-datepicker.min.js"></script>    
+    <script src="js/idate.js" ></script>
+    
 </body>
 </html>
