@@ -13,30 +13,35 @@
 <!-- +++++++++++++++++++++++++++++++++++   INICIO DE CONTENIDO +++++++++++++++++++++++++++++++++++++-->    
     <div class="container mt-4 justify-content-around">
         <div class="row">
-            <form class="w-75" action="" method="POST">
-                    <div class="col-4">
+            <form class="w-75" action="" method="">
+                    <div class="col-6">
                         <label class="float-left" for="InputCode">Ingresar codigo de barras</label>
                     </div>
                     <div class="col-6 float-right">
-                        <div class="form-group pl-5 pr-5">
+                        <div class="form-group pl-8 pr-8">
                             <input class="form-control" id="InputCode" type="text">
                         </div>
                     </div>
-            </form>
+                </form>
 
-        </div>
+       </div>
 
         <div class="row">
-                <form class="w-75" action="" method="POST">
-                        <div class="col-4">
-                            <br><label class="float-left" for="InputNameStore">Nombre de la tienda</label>
-                        </div>
-                        <div class="col-6 float-right">
-                            <div class="form-group pl-5 pr-5">
-                                <input class="form-control" id="InputNameStore" type="text">
-                            </div>
-                        </div>
-                </form>
+            <form class="w-75" action="" method="">
+                <div class="col-6">
+                    <label class="float-left" for="InputCode">Selecione la tienda</label>
+                </div>       
+                <div class="col-6 float-right"></div>         
+                    <div class="form-group">
+                        <select class="custom-select w-50 float-right pl-3 mr-3">
+                            <option selected="">Selecciona una tienda</option>
+                            <option value="1">Price Smart</option>
+                            <option value="2">Exito</option>
+                            <option value="3">Alkosto</option>
+                        </select>
+                    </div>
+                </div>
+            </form>
         </div>
 
         <div class="row justify-content-center">
