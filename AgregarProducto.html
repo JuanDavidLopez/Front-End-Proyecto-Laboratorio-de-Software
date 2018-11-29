@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <title>Agregar Producto</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 justify-content-center ">
+                <h4>Por favor llenar todos los campos !</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-10 col-sm-4 mr-0 pr-0 mt-5 ">
+                <input type="file" id="ImagenProd"><img src="images/photo-camera.png" alt="Imagen del producto" class="w-50">
+            </div>
+            <div class="col-xs-12 col-sm-8 ml-0 pl-0">
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label class="control-label col-xs-5 col-sm-2" for="NombreProd">Nombre:</label>
+                            <div class=" col-xs-7 col-sm-5">
+                                <input type="text" class="form-control ml-0 mr-0 pr-0" id="NombreProd" placeholder="Ingrese Nombre del Producto" name="NombreProd">
+                            </div>
+                    </div>
+                    
+                    <div class="form-group">
+                            <label class="control-label col-xs-5 col-sm-2" for="CodigoProd">Codigo de Barras:</label>
+                                <div class=" col-xs-7 col-sm-5">
+                                    <input type="text" class="form-control ml-0 mr-0 pr-0" id="CodigoProd" placeholder="Ingrese codigo de barras del Producto" name="NombreProd">
+                                </div>
+                    </div>
+
+                    <div class="form-group">
+                            <label class="control-label col-xs-5 col-sm-2" for="Tienda">Tienda:</label>
+                                <div class="col-xs-7 col-sm-4">
+                                        <div class="form-group">
+                                                <select class="custom-select ">
+                                                    <option selected="">Selecciona una tienda</option>
+                                                    <option value="1">Price Smart</option>
+                                                    <option value="2">Exito</option>
+                                                    <option value="3">Alkosto</option>
+                                                </select>
+                                        </div>
+                                </div>
+                    </div>
+
+                    <div class="form-group">
+                            <label class="control-label col-xs-5 col-sm-2" for="PrecioProd">Precio:</label>
+                                <div class=" col-xs-7 col-sm-5">
+                                    <input type="text" class="form-control ml-0 mr-0 pr-0" id="PrecioProd" placeholder="Ingrese el Precio del Producto" name="NombreProd">
+                                </div>
+                    </div>
+
+                </form>
+            </div> 
+        </div>
+       <div class="row">
+           <div class="col-xs-12">
+                <button type="submit" class="btn btn-success ml-5">Subir Foto</button>
+           </div>   
+       </div> 
+       <div class="row">
+            <div class="col-xs-12 col-sm-8">
+                 <div class="form-group">
+                     <br><label for="comment">Descripción</label>
+                     <textarea class="form-control" rows="4" id="comentario"></textarea>
+                 </div>
+            </div>  
+        </div>        
+       <div class="row">
+            <div class="col-xs-3 col-sm-6 ">
+                    <button type="submit" class="btn btn-outline-success">Registrar</button>
+            </div>
+
+            <div class="col-xs-3 col-sm-6 pl-5 float-right">
+                    <button type="submit" class="btn btn-outline-secondary">Regresar</button>
+            </div>
+       </div>
+    </div>
+
+
+
+
+<!--*********************Finaliza el contenido***********************************************************-->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js" ></script>    
+</body>
+</html>
